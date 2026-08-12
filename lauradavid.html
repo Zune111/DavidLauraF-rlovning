@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>David & Laura - Förlovningsinbjudan</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button class="language-toggle" id="language-toggle" type="button" data-next-language="hy" aria-label="Byt språk">
+    <span class="flag" aria-hidden="true"></span>
+  </button>
+
+  <header class="hero" id="start">
+    <div class="hero-inner">
+      <p class="eyebrow" data-i18n="heroEyebrow">Förlovningsinbjudan</p>
+      <h1>David Stamboltsyan & Laura Paloyan</h1>
+      <p class="hero-copy" data-i18n="heroCopy">En kväll för kärlek, skratt och gemenskap.</p>
+      <a class="button" href="#story" data-i18n="scrollButton">Skrolla ner</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="story-section" id="story" aria-labelledby="story-title">
+      <div class="section-inner story-intro">
+        <p class="section-label" data-i18n="storyLabel">Inbjudan</p>
+        <h2 id="story-title" data-i18n="storyTitle">Med stor glädje vill vi bjuda in er till vår förlovningsfest</h2>
+        <p class="lead" data-i18n="storyLead">Från små enkla ögonblick, till att vi nu vill fira början av vårt nästa kapitel tillsammans med er.</p> 
+      </div>
+
+      <div class="section-inner story-sequence" data-i18n-aria="storyAria" aria-label="Vår kärlekshistoria">
+        <article class="story-frame story-frame-one">
+          <div class="story-caption">
+           
+          </div>
+        </article>
+        <article class="story-frame story-frame-two">
+          <div class="story-caption">
+            
+          </div>
+        </article>
+        <article class="story-frame story-frame-three">
+          <div class="story-caption">
+           
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="details" id="details" aria-labelledby="details-title">
+      <div class="section-inner">
+        <p class="section-label" data-i18n="detailsLabel">Datum och tid</p>
+        <h2 id="details-title" data-i18n="detailsTitle">Spara datumet.</h2>
+        <p class="lead" data-i18n="detailsLead">Det viktigaste, enkelt samlat.</p>
+
+        <div class="details-grid">
+          <article class="detail">
+            <img src="Bilder/calandericon.webp" class="icon" aria-hidden="true" alt="">
+            <h3 data-i18n="dateHeading">Datum</h3>
+            <p data-i18n="dateValue">Lördag 14 November 2026</p>
+          </article>
+          <article>
+          </article>
+          <article class="detail">
+           <img src="Bilder/timeicon.png" class="icon" aria-hidden="true" alt="">
+            <h3 data-i18n="timeHeading">Tid</h3>
+            <p data-i18n-html="timeValue">Välkomen från 16:00<br>Firande från 17:00</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="party" aria-labelledby="party-title">
+      <div class="section-inner party-grid">
+        <div class="party-photo"></div>
+        <div>
+          <p class="section-label" data-i18n="partyLabel">Förlovning</p>
+          <h2 id="party-title" data-i18n="partyTitle">Tid och plats.</h2>
+          <p class="lead" data-i18n="partyLead">Lokal Sollentuna, Bollstanäsvägen 3, 192 78 Sollentuna. 16:00 välkomstiden, 17:00 firande.</p>
+          <div class="mini-list">
+            <p><img src="Bilder/locationicon.webp" class="icon" aria-hidden="true" alt=""><span data-i18n="placeMini">Lokal Solentuna</span></p>
+            <p><img src="Bilder/timeicon.png" class="icon" aria-hidden="true" alt=""><span data-i18n="timeMini">16:00 - sent</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rsvp" id="rsvp" aria-labelledby="rsvp-title">
+      <div class="section-inner rsvp-layout">
+        <div>
+          <p class="section-label" data-i18n="rsvpLabel"></p>
+          <h2 id="rsvp-title" data-i18n="rsvpTitle">Vänligen bekräfta er närvaro vid förlovningen senast den 1 oktober 2026</h2>
+        </div>
+
+        <form id="rsvp-form">
+          <label for="name" data-i18n="nameLabel">Namn och Efternamn</label>
+          <input id="name" name="name" type="text" autocomplete="name" data-i18n-placeholder="namePlaceholder" placeholder="Skriv ditt namn och efternamn">
+
+          <fieldset>
+            <div class="choice-row">
+              <label>
+                <input type="radio" name="attending" value="ja">
+                <span class="choice" data-i18n="yesChoice">Ja</span>
+              </label>
+              <label>
+                <input type="radio" name="attending" value="nej">
+                <span class="choice" data-i18n="noChoice">Nej</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="guest-count" id="guest-count">
+            <label for="guests" data-i18n="guestLabel">Hur många kommer?</label>
+            <input id="guests" name="guests" type="number" min="1" max="12" value="1">
+          </div>
+
+          <div class="form-actions">
+            <button class="button" type="submit" data-i18n="submitButton">Skicka svar</button>
+            <a class="button secondary" href="#start" data-i18n="topButton">Till toppen</a>
+          </div>
+          <p class="note" id="note" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer data-i18n="footer">
+    Med kärlek, Laura & David
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
