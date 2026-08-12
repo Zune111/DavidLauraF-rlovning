@@ -22,7 +22,7 @@ const translations = {
     partyLabel: "Förlovning",
     partyTitle: "Tid och plats.",
     partyLead: "Lokal Sollentuna, Bollstanäsvägen 3, 192 78 Sollentuna. Välkomstmingel från 16:00, firande från 17:00.",
-    placeMini: "Lokal Sollentuna",
+    placeMini: "Restaurang Levent",
     timeMini: "16:00 - sent",
 
     rsvpTitle: "Vänligen bekräfta er närvaro vid förlovningen senast den 1 oktober 2026",
@@ -70,7 +70,7 @@ const translations = {
     partyLabel: "Նշանադրություն",
     partyTitle: "Ժամանակ և վայր։",
     partyLead: "Lokal Sollentuna, Bollstanäsvägen 3, 192 78 Sollentuna։ Հյուրերի ընդունելություն՝ 16:00-ից, տոնակատարություն՝ 17:00-ից։",
-    placeMini: "Lokal Sollentuna",
+    placeMini: "Restaurang Levent",
     timeMini: "16:00 - ուշ",
 
     rsvpTitle: "Խնդրում ենք հաստատել Ձեր ներկայությունը նշանադրության միջոցառմանը մինչև 2026 թվականի հոկտեմբերի 1-ը։",
